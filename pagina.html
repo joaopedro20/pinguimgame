@@ -1,0 +1,63 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="css/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script src="javascript.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+
+<body onkeydown="Key(event)">
+<div id="Area">
+   <div id="game-over-overlay">
+    </div>
+<div id="AreaContador">
+			<table style="width:100%;margin:auto">
+			<tr>
+			 <td style="text-align: left;border-bottom: 3px solid red;border-top: 3px solid red;font-size: 250%;color:red;border-right: 3px solid red;">Vidas</td>
+			 <td id="vidas" style="text-align: left;"></td>
+			 <td id="contador" style="text-align: right;"></td>
+			 <td style="text-align: left;border-bottom: 3px solid red;border-left: 3px solid red;border-top: 3px solid red;font-size: 250%;color:red;">Pontos</td>
+			</tr>
+			</table>
+</div>
+
+<div id="dialog" title="Quiz">
+  <div id="myDialogText"></div>
+</div>
+
+
+<div id="scroller">   
+	<div id="character">
+	</div> 
+	<div id="egg">
+	</div> 
+
+</div> 
+
+<div id="ButtonsArea">
+<button onclick="moveB()">Baixo</button> 
+<button onclick="moveD()">Direita</button>
+<button onclick="moveC()">Cima</button> 
+<button onclick="moveE()">Esquerda</button> 
+<button onclick="stop()">Parar</button> 
+<!-- <button onclick="location.reload()">Recomeçar</button>  -->
+
+
+<button id="opener" style="display:none">Open Dialog</button>
+</div>
+<div id="game-over">
+      <h1>GAME OVER</h1>
+      <button id="play-again" onclick="location.reload()">Play Again</button>
+    </div>
+<div id="pos"></div>
+</div>
+</body>
+</html>
